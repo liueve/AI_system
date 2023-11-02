@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1280</width>
+     <height>800</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="mainframe">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+	border-radius: 20px;
+	background-color:  
+	QLinearGradient(x0:0, y1:0.5, x0:1, y2:2,
+	stop:0 rgb(20, 32, 44),
+	stop:1 rgb(37, 85, 117));
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>11</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="4" column="7">
+        <widget class="QFrame" name="corner_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>11</width>
+           <height>11</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="5">
+        <widget class="QFrame" name="MenuList">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="import_button">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>130</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Gen Jyuu GothicX Medium</family>
+              <pointsize>11</pointsize>
+              <weight>7</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">height:40px;
+border-radius:20px;
+background-color: rgb(1, 151, 241);
+color: rgb(255, 255, 255);
+font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>選擇檔案</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="savepic_btn">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	padding:5px;
+	padding-top:8px;
+	background-color: transparent;
+	height:30px;
+	color: rgb(255, 255, 255);
+	font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+}
+QPushButton:hover{
+	color: rgb(1, 151, 241);
+}</string>
+            </property>
+            <property name="text">
+             <string>儲存資料</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget_1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{
+	padding-top: 5px;
+	background-color: transparent;
+}
+QListWidget::item{
+	height:40px;
+	color: rgb(255, 255, 255);
+}
+QListWidget::item:hover{
+	background-color: rgba(255, 255, 255, 30);
+	border-left: 5px solid rgb(1, 151, 241);
+}
+QListWidget::item:selected{
+	color: rgb(148, 148, 148);
+}</string>
+            </property>
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>時域</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>頻域</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX Medium</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>統計</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX Medium</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>圖片</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX Medium</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	background-color: transparent;
+	height:30px;
+	color: rgb(255, 255, 255);
+	font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+}
+QPushButton:hover{
+	color: rgb(1, 151, 241);
+}</string>
+            </property>
+            <property name="text">
+             <string>AI 健康診斷</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{
+	padding-top: 5px;
+	background-color: transparent;
+}
+QListWidget::item{
+	height:40px;
+	color: rgb(255, 255, 255);
+}
+QListWidget::item:hover{
+	background-color: rgba(255, 255, 255, 30);
+	border-left: 5px solid rgb(1, 151, 241);
+}
+QListWidget::item:selected{
+	color: rgb(148, 148, 148);
+}</string>
+            </property>
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>A model</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>B model</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX Medium</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>C model</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Gen Jyuu GothicX Medium</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="fullscreen_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: transparent;
+}
+QPushButton:hover{
+	padding-left:3px;
+	padding-bottom:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>button/window-max.png</normaloff>button/window-max.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="Menu_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>button/burger-bar.png</normaloff>button/burger-bar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="exit_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: transparent;
+}
+QPushButton:hover{
+	padding-left:3px;
+	padding-bottom:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>button/close.png</normaloff>button/close.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="minwindow_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	background-color: transparent;
+}
+QPushButton:hover{
+	padding-left:3px;
+	padding-bottom:3px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>button/minus-sign.png</normaloff>button/minus-sign.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="5">
+        <widget class="QFrame" name="bottom_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>10</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="7">
+        <widget class="QFrame" name="right_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>10</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="QFrame" name="titlespace">
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="6">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="statusbar_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+             <property name="spacing">
+              <number>11</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,1,0,4,3">
+               <property name="spacing">
+                <number>7</number>
+               </property>
+               <item>
+                <widget class="QComboBox" name="comboBox_1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>180</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Gen Jyuu GothicX Medium</family>
+                   <pointsize>9</pointsize>
+                   <weight>7</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QComboBox {
+    border-radius: 6px;
+    padding: 4px 20px 3px 8px;
+	font: 57 9pt &quot;Gen Jyuu GothicX Medium&quot;;
+}
+
+QComboBox:editable{
+	background-color: white;
+	border-top-left-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 6px;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+	background-color: rgb(255, 255, 255);
+}
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+	border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 6px;
+}
+
+QComboBox::down-arrow {
+	image: url(./button/down.png);
+	right: 5px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+	image: url(./button/upload.png);
+    top: 1px;
+    right: 5px;
+}</string>
+                 </property>
+                 <property name="editable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="linechart_button">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Gen Jyuu GothicX Medium</family>
+                   <pointsize>9</pointsize>
+                   <weight>7</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+	background-color:  rgb(255, 255, 255);
+	
+	font: 57 9pt &quot;Gen Jyuu GothicX Medium&quot;;
+}
+QPushButton:pressed{
+	color: rgb(255, 255, 255);
+	background-color: rgb(1, 151, 241);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>開始分析</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="clear_button">
+                 <property name="font">
+                  <font>
+                   <family>Gen Jyuu GothicX Medium</family>
+                   <pointsize>9</pointsize>
+                   <weight>7</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+	background-color:  rgb(255, 255, 255);
+	font: 57 9pt &quot;Gen Jyuu GothicX Medium&quot;;
+}
+QPushButton:pressed{
+	color: rgb(255, 255, 255);
+	background-color: rgb(1, 151, 241);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>清除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Preferred</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QProgressBar" name="progressBar_1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>200</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QProgressBar{
+min-height: 20;
+text-align: center;
+
+background-color: #262829;
+color: #FFFFFF;
+border-radius: 6px;
+}
+QProgressBar::chunk{
+border-radius: 6px;
+background: qlineargradient(spread:pad,x1:0,y1:0,x2:1,y2:0,stop:0 rgb(26, 49, 68), stop:1 rgb(1, 151, 241));
+}</string>
+                 </property>
+                 <property name="value">
+                  <number>0</number>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="textVisible">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(255, 255, 255, 25);</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_3">
+             <property name="styleSheet">
+              <string notr="true">background-color: transparent;</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="page_4">
+             <property name="styleSheet">
+              <string notr="true">background-color: transparent;</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,3,2">
+            <item>
+             <widget class="QGroupBox" name="Btn_List">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>140</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>350</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox::title{
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-top:25px;
+	border-left:6px solid rgb(0, 85, 127);
+	padding: 4px 25px;
+	background-color: rgb(0, 138, 217);
+	color: rgb(255, 255, 255);
+}
+QGroupBox{
+	font: 57 12pt &quot;Gen Jyuu GothicX Medium&quot;;
+	border: 1px solid gray;
+	border-color: #FF17365D;
+	border-radius: 15px;
+	padding:60px 0px 100px 20px;
+	background-color: rgba(255, 255, 255, 25)
+}
+</string>
+              </property>
+              <property name="title">
+               <string>三軸</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9" stretch="0,0,0,0">
+               <property name="spacing">
+                <number>11</number>
+               </property>
+               <property name="topMargin">
+                <number>20</number>
+               </property>
+               <property name="bottomMargin">
+                <number>6</number>
+               </property>
+               <item>
+                <widget class="QRadioButton" name="X_btn">
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton{
+	color: rgb(255, 255, 255);
+	font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+	text-align:center;
+	background-color: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>X軸</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="Y_btn">
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton{
+	color: rgb(255, 255, 255);
+	font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+	text-align:center;
+	background-color: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Y軸</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QRadioButton" name="Z_btn">
+                 <property name="styleSheet">
+                  <string notr="true">QRadioButton{
+	color: rgb(255, 255, 255);
+	font: 57 11pt &quot;Gen Jyuu GothicX Medium&quot;;
+	text-align:center;
+	background-color: transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Z軸</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Minimum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgba(255, 255, 255, 25);</string>
+              </property>
+              <widget class="QWidget" name="page_5">
+               <property name="styleSheet">
+                <string notr="true">background-color: transparent;</string>
+               </property>
+              </widget>
+              <widget class="QWidget" name="page_6">
+               <property name="styleSheet">
+                <string notr="true">background-color: transparent;</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTreeWidget" name="treeWidget">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTreeWidget{
+	background-color: rgba(255, 255, 255, 25);
+}
+QTreeWidget::item{
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+}
+QTreeWidget::item:hover{
+	background-color: rgba(255, 255, 255, 25)
+}
+QTreeWidget QHeaderView::section{
+	background-color:rgba(255, 255, 255, 25);
+	color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <column>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>A</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>a</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+      <zorder>Menu_btn</zorder>
+      <zorder>MenuList</zorder>
+      <zorder>minwindow_btn</zorder>
+      <zorder>fullscreen_btn</zorder>
+      <zorder>exit_btn</zorder>
+      <zorder>corner_frame</zorder>
+      <zorder>bottom_frame</zorder>
+      <zorder>frame_3</zorder>
+      <zorder>titlespace</zorder>
+      <zorder>right_frame</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Menu_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MenuList</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savepic_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>listWidget_1</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>listWidget_2</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minwindow_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1179</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>422</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
